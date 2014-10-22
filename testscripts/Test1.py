@@ -11,3 +11,4 @@ class CheckTest1(SFDriverScript):
     def test_name1(self):
         self.driver.get("https://login.salesforce.com/")
         print self.driver.title
+        print "this is from my mbp"
