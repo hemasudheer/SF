@@ -12,7 +12,11 @@ class SFDriverScript(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        SFDriverScript.driver = webdriver.Firefox()
+        if browser == "firefox":
+            SFDriverScript.driver = webdriver.Firefox()
+        elif browser == "chrome":
+            os.environ["webdriver.chrome.driver"] = chromedriver
+            SFDriverScript.driver = webdriver.Chrome(chromedriver)
 
     @classmethod
     def tearDownClass(cls):
