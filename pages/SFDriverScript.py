@@ -23,3 +23,4 @@ class SFDriverScript(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         SFDriverScript.driver.quit()
+
