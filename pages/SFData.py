@@ -6,5 +6,5 @@ Created on Oct 22, 2014
 
 loginurl = "https://login.salesforce.com/"
 
-credentials = {"username": "hemasudheer",
-               "password": "Automation123"}
+credentials = {"username": "bla",
+               "password": "blaaa"}
